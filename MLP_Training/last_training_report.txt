@@ -1,0 +1,24 @@
+Leadership MLP training report  (2026-10-21T18:30:16.125474+00:00)
+Label source: synthetic expert-rule labels
+Synthetic runs: 12000 (3000 per class), real labelled runs: 0
+Features: recruitment_duration_s, total_game_duration_s, boss_encounter_duration_s, enemies_killed, enemies_undefeated, allies_left_behind, player_deaths
+Network: 7 -> 32 -> 16 -> 4 (ReLU, softmax), iterations: 157
+
+Held-out synthetic test accuracy: 0.924
+(This measures how well the MLP reproduces the expert rules, not how well it judges real players.)
+              precision    recall  f1-score   support
+
+      Normal      0.955     0.945     0.950       600
+     Average      0.899     0.873     0.886       600
+        Good      0.893     0.903     0.898       600
+    Gorgeous      0.948     0.973     0.961       600
+
+    accuracy                          0.924      2400
+   macro avg      0.924     0.924     0.924      2400
+weighted avg      0.924     0.924     0.924      2400
+
+Confusion matrix (rows = true, cols = predicted): Normal, Average, Good, Gorgeous
+[[567  33   0   0]
+ [ 27 524  49   0]
+ [  0  26 542  32]
+ [  0   0  16 584]]

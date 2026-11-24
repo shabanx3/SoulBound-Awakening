@@ -1,0 +1,31 @@
+{
+  "_comment": "Expert rules used to label SYNTHETIC training runs. Keep in sync with ProvisionalLeadershipEvaluator in the Unity Inspector (Leadership System > LeadershipSessionTracker > Evaluator), then retrain.",
+  "allyTaskCount": 2,
+  "alliesRecruited": 4,
+  "maxEnemiesInArea": 200,
+
+  "goodTaskSeconds": 120,
+  "poorTaskSeconds": 600,
+  "taskWeight": 1.0,
+
+  "goodGameSeconds": 1800,
+  "poorGameSeconds": 5400,
+  "gameWeight": 1.0,
+
+  "goodBossSeconds": 90,
+  "poorBossSeconds": 600,
+  "bossWeight": 1.0,
+
+  "poorClearance": 0.3,
+  "goodClearance": 0.9,
+  "clearanceWeight": 1.5,
+
+  "alliesWeight": 1.5,
+
+  "penaltyPerDeath": 0.07,
+  "maxDeathPenalty": 0.35,
+
+  "averageFrom": 0.35,
+  "goodFrom": 0.55,
+  "gorgeousFrom": 0.75
+}
